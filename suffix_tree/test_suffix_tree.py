@@ -37,7 +37,7 @@ class SuffixTreeTest(unittest.TestCase):
     def test_text_string(self):
 	f = codecs.open("test.txt", encoding='utf-8')
 	st = SuffixTree(f.read())
-	self.assertTrue(st.has_substring(u'谢'))
+	self.assertTrue(st.has_substring(u'a'))
 
     def test_chinese_string(self):
 	st = SuffixTree(u"才高八斗")
